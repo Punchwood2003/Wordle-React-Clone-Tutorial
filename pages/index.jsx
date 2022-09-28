@@ -30,16 +30,14 @@ export default function Home() {
     // Function to handle key presses (event listener)
     const handleKey = (event) => {
         // TODO: Ignore key presses if the user has won
-
         // TODO: Call the wordle handleKeyboardInput method and update state
-
         // TODO: Update the message or clear it whenever a key is pressed
     };
 
     // Check for win or lose conditions
     // The game will end whenever either of these conditions are true
     // TODO: Update the message if a win condition is met
-    
+
     return (
         <div
             style={{
@@ -50,7 +48,7 @@ export default function Home() {
         >
             <h1>Wordle!</h1>
             <div id="board">
-                <Word />
+                <Word word="ST" guessResList=[1, 0, -] />
                 <Word />
                 <Word />
                 <Word />

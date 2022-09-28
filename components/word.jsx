@@ -11,13 +11,19 @@ import Character from './character';
  * @param {string} props.word The current word to display
  */
 export default function Word(props) {
+    const [charList, setCharList] = useState(Array(5).fill(''));
+
+    useEffect(() => {
+        if(!props.word) {
+            return;
+        }
+        const splitWord = props.word.split('');
+        setCharList(splitWord.concat(Array(5 - props.word.length)).fill(''));
+    }, [props.word]);
+
     return (
-        <div className="word">
-            <Character />
-            <Character />
-            <Character />
-            <Character />
-            <Character />
-        </div>
-    );
+        <div className="Word">
+
+        <div/>
+    )
 }
