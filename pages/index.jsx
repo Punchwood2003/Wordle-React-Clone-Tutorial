@@ -48,7 +48,7 @@ export default function Home() {
         >
             <h1>Wordle!</h1>
             <div id="board">
-                <Word word="ST" guessResList=[1, 0, -] />
+                <Word />
                 <Word />
                 <Word />
                 <Word />
